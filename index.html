@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link href="styling.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="startScreen">
+        <div class="heading">Snake Game</div>
+        <div>
+            <button id="play">Play</button>
+        </div>
+        <div class="showScore">High Score : <span class="hValue" id="startingHighValue">0</span></div>
+    </div>
+
+    <div id="gameScreen">
+        <div id="container">
+            <canvas id="snakeBoard"></canvas>
+        </div>
+        <div id="details">
+            <div>Score : <span id="score">0</span></div>
+            <div>Level : <span id="level">1</span></div>
+        </div>
+        <div id="highScore">
+            High Score : <span class="hValue" id="highScoreValue">0</span>
+        </div>
+    </div>
+
+    <div id="endScreen">
+        <div class="heading">Game Over !</div>
+        <div>
+            <button id="replay">Play Again</button>
+        </div>
+        <div class="showScore">
+            <div>Your score : <span id="sValue">0</span></div><br>
+            <div>High score : <span class="hvalue" id="finalHighValue">0</span></div>
+        </div>
+
+    </div>
+</body>
+
+<script src="movement.js">
+
+</script>
+
+</html>
